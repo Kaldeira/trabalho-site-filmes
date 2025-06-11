@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1e1f24;
+}
+
+.box {
+    display: flex;
+    gap: 20px;
+    background: #2a2b32;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin:  20px auto;
+    width: 70%;
+}
+
+.capa {
+    flex: 0 0 200px;
+}
+
+.capa img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.avaliacao,
+.sinopse,
+.onde-assistir,
+.critica {
+    background: #2a2b32;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #3b3d4f;
+    color: #e0e0e0;
+}
+
+.avaliacao span.verde {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.avaliacao span.vermelho {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.sinopse,
+.onde-assistir {
+    color: #e0e0e0;
+}
+
+.streamings img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: brightness(0.9);
+}
+
+a {
+    color: #42a5f5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.voltar {
+    padding: 12px 24px;
+    background-color: #3b3d4f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 45px;
+    transform: translateY(-5px);
+    margin: 0 auto;
+}
+
+.voltar a {
+    text-decoration: none;
+}
+
+.voltar:hover {
+    background-color: #2a2b32;
+    transform: translateY(-8px);
+}

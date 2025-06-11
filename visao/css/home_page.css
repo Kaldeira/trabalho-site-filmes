@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202123;
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+}
+
+header,
+footer {
+    width: 100%;
+    background: #2c2d3a;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagem-banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 18px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1.0);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #6b438b;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1.0);
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.texto {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.filmes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.filmes h1 {
+    font-size: 20px;
+    margin: 20px 0 10px 5%;
+}
+
+.filmes hr {
+    margin: 20px 0 10px 5%;
+    border: none;
+    height: 1px;
+    background-color: #444;
+}
+
+.poster-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 5%;
+}
+
+.poster {
+    width: 160px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.poster:hover {
+    opacity: 1;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+}
+
+.link-interno {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .filmes {
+        width: 90%;
+    }
+
+    .poster {
+        width: 120px;
+        height: 200px;
+    }
+}
+
+
+.formulario-sugestao {
+    background-color: #2c2d3a;
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-sugestao h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.formulario-sugestao form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-sugestao label {
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.formulario-sugestao input,
+.formulario-sugestao select,
+.formulario-sugestao textarea {
+    background-color: #1c1c1f;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.formulario-sugestao button {
+    background-color: #6b438b;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario-sugestao button:hover {
+    background-color: #844fc1;
+}
+
+@media screen and (max-width: 768px) {
+    .formulario-sugestao {
+        width: 90%;
+    }
+}
